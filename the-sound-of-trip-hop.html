@@ -45,13 +45,13 @@
                     By <a href="https://daily.bandcamp.com/contributors/catwoods">Cat Woods</a>
                     · September 23,2021
                 </p>
-                <div>
-                    <button>Play</button>
+                <div class="cover-container">
+                    <button id="play-button"></button>
                     <img src="./images/bandcamp/new-cover.jpg" alt="">
                 </div>
-                <div class="container" style="display: flex;">
-                    <div class="column">
-                        <span>
+                <div class="new-container">
+                    <div class="side-column">
+                        <span class="artist-profile">
                             <a href="https://f4.bcbits.com/img/0024888549_20.jpg">
                                 <img src="./images/bandcamp/profile-pics/sneaker-pimps.jpg" alt="">
                             </a>
@@ -60,7 +60,7 @@
                             <button>Follow</button>
                         </span>
                     </div>
-                    <div class="column">
+                    <div class="mid-column">
                         <p>
                             The definition of “trip-hop” is a slippery one; even one of the genre’s pioneers 
                             has trouble pinning it down. “Essentially, it needs to have a down-tempo beat, 
@@ -73,10 +73,12 @@
                             as well, and if you push genres like hip-hop and jazz as far as they can go, 
                             then you come up with a new amalgamation of sound.”
                         </p>
-                        <div class="player-container" style="display: flex;">
-                            <img src="./images/bandcamp/covers/fighter.jpg" alt="">
+                        <div class="player-container">
+                            <div class="player-img-container">
+                                <img src="./images/bandcamp/covers/fighter.jpg" alt="">
+                            </div>
                             <audio src="" controls></audio>
-                            <span style="display: flex; flex-direction: column;">
+                            <span class="player-links">
                                 <a href="https://sneakerpimps.bandcamp.com/album/squaring-the-circle?action=buy">
                                     BUY
                                 </a>
@@ -110,21 +112,21 @@
                         </p>
                         <h2>Sneaker Pimps</h2>
                         <a href="https://sneakerpimps.bandcamp.com/album/becoming-x">Becoming X</a>
-                        <span class="article-end"></span>
-                        <button class="tag">electronic</button>
-                        <span>
+                        <div class="article-end"></div>
+                        <a href="https://bandcamp.com/tag/electronic" class="tag">electronic</a>
+                        <p class="read-more">
                             Read more in 
                             <a href="https://daily.bandcamp.com/genres/electronic">Electronic →</a>
-                        </span>
+                        </p>
                     </div>
-                    <div class="column">
-                        <span>
+                    <div class="side-column">
+                        <span class="album-merch">
                             <span>
                                 Merch for this release: Compact Disc (CD), 2 x Vinyl LP, T-Shirt/Apparel, 
                                 , Poster/Print
                             </span>
                             <img src="./images/bandcamp/album-merch/fighter1.jpg" alt="">
-                            <span>
+                            <span class="merch-photos">
                                 <img src="./images/bandcamp/album-merch/fighter2.jpg" alt="">
                                 <img src="./images/bandcamp/album-merch/fighter3.jpg" alt="">
                                 <img src="./images/bandcamp/album-merch/fighter4.jpg" alt="">
@@ -134,9 +136,9 @@
                 </div>
             </article>
         </main>
-        <div>
+        <div id="top-stories" class="stories">
             <h3>Top Stories</h3>
-            <div class="stories-container" style="display: flex;">
+            <div class="stories-container">
                 <article>
                     <img src="./images/bandcamp/top-stories/top-stories1.jpg" alt="">
                     <p>
@@ -169,10 +171,12 @@
                 </article>
             </div>
         </div>
-        <div>
-            <h3>Latest</h3>
-            <a href="https://daily.bandcamp.com/latest">see all stories</a>
-            <div class="stories-container" style="display: flex;">
+        <div id="latest" class="stories">
+            <div class="header">
+                <h3>Latest</h3>
+                <a href="https://daily.bandcamp.com/latest">see all stories</a>
+            </div>
+            <div class="stories-container">
                 <article>
                     <img src="./images/bandcamp/top-stories/top-stories1.jpg" alt="">
                     <a href="https://daily.bandcamp.com/lists/footwork-chicago-list">
@@ -211,12 +215,14 @@
                 </article>
             </div>
         </div>
-        <div>
-            <h3>On Bandcamp Radio </h3>
-            <a href="https://bandcamp.com/?show_archive=1">see all</a>
-            <div>
+        <div id="radio">
+            <div class="header">
+                <h3>On Bandcamp Radio </h3>
+                <a href="https://bandcamp.com/?show_archive=1">see all</a>
+            </div>
+            <div class="img-container">
                 <img src="images/bandcamp/bandcamp-radio.jpg" alt="">
-                <div style="display: flex;">
+                <div class="footer">
                     <p>Listen to the latest episode of Bandcamp Radio.</p>
                     <a href="https://bandcamp.com/?play=1">Listen now →</a>
                 </div>
@@ -226,6 +232,7 @@
     <footer>
         <a href="https://bandcamp.com/?from=logo">Bandcamp</a>
         <span>
+            <a href="https://bandcamp.com/login?from=footer">log in</a>
             <a href="https://bandcamp.com/terms_of_use">terms of use</a>
             <a href="https://bandcamp.com/privacy">privacy</a>
             <a href="https://bandcamp.com/copyright">copyright policy</a>
