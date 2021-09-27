@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-size: 17px;
     overflow-x: hidden;
-    background: linear-gradient( 0deg, #e9e8e8 0%, #e9e8e8 24%, #ffffff 25%);
+    background: linear-gradient( 0deg, #e9e8e8 0%, #e9e8e8 22%, #ffffff 23%);
 }
 nav {
     display: flex;
@@ -152,17 +152,30 @@ article {
     width: 50%;
     text-align: left;
 }
-#main-article p{
+#main-article p, h2{
     margin: 0.75rem 0;
-    line-height: 1.76rem;    
+    line-height: 1.76rem;
+    width: 50%;
+    margin: auto;
+}
+#main-article > p, h2 {
+    text-align: left;
+    margin-top: 3vh;
+}
+.profile-player-merch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin: 2.5rem 0 3rem 0;
 }
 .player-container {
     display: flex;
     border: 1px solid black;
     height: 8vw;
+    width: 50%;
     align-items: center;
     justify-content: space-between;
-    margin: 2.5rem 0 3rem;
 }
 .player-img-container {
     width: 11.1vw;
@@ -204,11 +217,8 @@ article {
 .artist-profile {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: auto;
-    position: relative;
-    top: 30vh;
     font-size: 0.75rem;
+    width: 15vw;
 }
 .artist-profile * {
     margin-top: 5px;
@@ -241,11 +251,12 @@ article {
 .album-merch {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: auto;
+    align-items: center;
     font-size: 0.75rem;
-    position: relative;
-    top: 22vh;
+    width: 15vw;
+}
+.album-merch img {
+    width: 10vw;
 }
 .album-merch img:hover {
     cursor: pointer;
@@ -291,7 +302,7 @@ article {
     text-decoration: none;
 }
 .read-more {
-    text-align: center;
+    text-align: center !important;
     margin-top: 7vh;
 }
 .stories {
