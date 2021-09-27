@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-size: 17px;
     overflow-x: hidden;
-    background: linear-gradient( 0deg, #e9e8e8 0%, #e9e8e8 38%, #ffffff 42%);
+    background: linear-gradient( 0deg, #e9e8e8 0%, #e9e8e8 24%, #ffffff 25%);
 }
 nav {
     display: flex;
@@ -218,6 +218,9 @@ article {
     height: 9.6vw;
     border-radius: 100%;
 }
+.artist-profile img:hover {
+    border: 1px solid black;
+}
 .artist-profile a {
     color: black;
 }
@@ -231,6 +234,10 @@ article {
     margin-top: 5px;
     padding: 8px;
 }
+.artist-profile button:hover {
+    cursor: pointer;
+    color: #1da0c3;
+}
 .album-merch {
     display: flex;
     flex-direction: column;
@@ -240,13 +247,24 @@ article {
     position: relative;
     top: 22vh;
 }
+.album-merch img:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
 .merch-photos {
     display: flex;
     justify-content: space-between;
+    width: fit-content;
 }
 .merch-photos img {
     width: 3vw;
     height: 3vw;
+}
+#sneakers-pimp-02 {
+    top: 760px;
+}
+#kelli-alli {
+    top: 1670px;
 }
 .article-end {
     width: 17px;
