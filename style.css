@@ -158,7 +158,7 @@ article {
     width: 50%;
     margin: auto;
 }
-#main-article > p, h2 {
+#main-article section{
     text-align: left;
     margin-top: 3vh;
 }
@@ -167,7 +167,7 @@ article {
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    margin: 2.5rem 0 3rem 0;
+    margin: 0 0 3rem 0;
 }
 .player-container {
     display: flex;
@@ -271,11 +271,8 @@ article {
     width: 3vw;
     height: 3vw;
 }
-#sneakers-pimp-02 {
-    top: 760px;
-}
-#kelli-alli {
-    top: 1670px;
+.hidden {
+    visibility: hidden;
 }
 .article-end {
     width: 17px;
@@ -294,6 +291,7 @@ article {
     display: block;
     margin: auto;
     margin-top: 10vh;
+    margin-bottom: 10vh;
     width: fit-content;
 }
 .tag:hover {
