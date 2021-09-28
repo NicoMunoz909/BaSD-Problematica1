@@ -22,6 +22,9 @@ h1 {
     font-size: 3rem;
     color: black;
 }
+h2 {
+    font-size: 1rem;
+}
 h3 {
     font-size: 3rem;
     font-style: italic;
@@ -115,6 +118,7 @@ article {
     color: black;
     font-style: italic;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 .daily-links-container {
     padding-right: 5vw;
@@ -217,6 +221,7 @@ article {
 .artist-profile {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 0.75rem;
     width: 15vw;
 }
@@ -254,9 +259,10 @@ article {
     align-items: center;
     font-size: 0.75rem;
     width: 15vw;
+    text-align:center
 }
 .album-merch img {
-    width: 10vw;
+    width: 100%;
 }
 .album-merch img:hover {
     cursor: pointer;
@@ -264,12 +270,10 @@ article {
 }
 .merch-photos {
     display: flex;
-    justify-content: space-between;
-    width: fit-content;
+    width: 100%;
 }
 .merch-photos img {
-    width: 3vw;
-    height: 3vw;
+    width: 33%;
 }
 .hidden {
     visibility: hidden;
