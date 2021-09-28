@@ -52,6 +52,11 @@ ul {
     align-items: center;
     height: 100%;
 }
+ol {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
 .nav-button {
     padding: 0 10px 0 10px;
     height: 100%;
